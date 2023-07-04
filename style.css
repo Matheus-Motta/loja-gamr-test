@@ -1,0 +1,297 @@
+/*Fonte*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  background: #b6abab;
+}
+
+header {
+  background-color: #b6abab;
+}
+
+h1 {
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+span {
+  font-size: 30px;
+  color: aqua;
+}
+
+/* Barra de navegação */
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+.navbar ul {
+  width: 1080px;
+  display: flex;
+  padding: 20px;
+  margin-top: 10px;
+  gap: 40px;
+  background: #000;
+  border-radius: 6px;
+}
+.navbar ul li {
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: aqua;
+}
+.navbar ul li a:hover {
+  border-bottom: 1px solid aqua;
+}
+/* Fim barra de navegação */
+
+/* Conteúdo */
+.container {
+  width: 1080px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+}
+
+.coluna1 {
+  width: 700px;
+}
+.coluna2 {
+  width: 300px;
+  margin-left: 60px;
+}
+
+.coluna1 h1,
+.coluna2 h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: aqua;
+  background-color: #000;
+  border-radius: 6px;
+  padding-left: 10px;
+}
+
+aside.coluna2 img {
+  border: 10px solid black;
+  justify-content: space-around;
+  margin: 0 10px 20px 10px;
+  padding: 0;
+}
+.noticia {
+  margin: 0 auto;
+  width: 900px;
+}
+.noticia img {
+  width: 90%;
+}
+
+.noticia h2 {
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  text-decoration: underline;
+}
+.noticia p {
+  font-size: 16px;
+  font-weight: bold;
+  width: 90%;
+}
+body.home #navegacao a#home,
+body.noticias #navegacao a#noticias,
+body.contato #navegacao a#contato,
+body.servicos #navegacao a#servicos 
+body.produtos #navegacao a#produtos {
+  border-bottom: 1px solid aqua;
+}
+#produto {
+  width: 1080px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: space-around;
+}
+.anuncios {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#produto h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: aqua;
+  background-color: #000;
+  border-radius: 6px;
+  padding-left: 10px;
+}
+
+#produto img {
+  width: 300px;
+  height: 250px;
+  display: flex;
+}
+/* formulário de contato */
+form {
+  width: auto;
+  margin-left: 400px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.formulario {
+  width: 600px;
+  display: block;
+  margin-left: 400px;
+  margin-bottom: 250px;
+  padding-top: 0;
+  padding-left: 10px;
+  border: 1px solid black;
+}
+.formulario input {
+  display: block;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+.formulario #wpp{
+    display: inline;
+}
+.formulario button {
+  width: 90px;
+  display: block;
+  margin-left: 2px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: aqua;
+  text-transform: uppercase;
+}
+.formulario input#wpp{
+    margin-bottom: 10px;
+}
+.formulario button:hover {
+  box-shadow: 3px 3px;
+}
+/* Fim formulário de contato */
+/* Serviços */
+.container-servicos{
+    width: 1080px;
+    margin: 0 auto;
+}
+.container-servicos h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: aqua;
+    background-color: #000;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+.container-servicos #manutencao,
+.container-servicos #usados,
+.container-servicos #aluguel{
+    margin: 0 auto;
+}
+.container-servicos #manutencao h2,
+.container-servicos #usados h2,
+.container-servicos #aluguel h2
+{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 18px;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+.container-servicos #manutencao img,
+.container-servicos #usados img,
+.container-servicos #aluguel img{
+    display: flex;
+    width: 55%;
+    margin-left: 20%;
+    margin: 0 auto;
+}
+.container-servicos #manutencao p,
+.container-servicos #usados p,
+.container-servicos #aluguel p{
+    font-size: 20px;
+    font-weight: 500;
+    width: 55%;
+    text-align: center;
+    margin: 0 auto;
+}
+/* Fim de Serviços */
+/* Produtos */
+.parent {
+    width: 1080px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 1 / 3 / 2 / 4; }
+    .div4 { grid-area: 2 / 1 / 3 / 2; }
+    .div5 { grid-area: 2 / 2 / 3 / 3; }
+    .div6 { grid-area: 2 / 3 / 3 / 4; }
+    .div7 { grid-area: 3 / 1 / 4 / 2; }
+    .div8 { grid-area: 3 / 2 / 4 / 3; }
+    .div9 { grid-area: 3 / 3 / 4 / 4; }
+    .div10 { grid-area: 4 / 1 / 5 / 2; }
+    .div11 { grid-area: 4 / 2 / 5 / 3; }
+    .div12 { grid-area: 4 / 3 / 5 / 4; }
+/* footer */
+.rodape {
+  width: 100%;
+  position: static;
+
+  color: aqua;
+  background: black;
+  margin-top: 20px; ;
+}
+.rodape p {
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.rodape .social-media{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+.social-media a{
+    color: aqua;
+}
+.social-media a:hover{
+    border-bottom: 1px solid aqua;
+}
+.social-media a p{
+    height: 300px;
+}
+
+
+
+
+
